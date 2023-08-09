@@ -8,11 +8,11 @@ function PictureList({ pictures, isLoading }) {
       {pictures.map(picture => (
         <div key={picture.id} className="picture-item">
           {isLoading ? (
-            <div className="shimmer-effect" />
+            <div className="shimmer-effect" key={`shimmer-${picture.id}`} />
           ) : (
-            <img src={picture.urls.small} alt={picture.description} />
+            <img src={picture.urls.small} alt={picture.description} key={picture.id} />
           )}
-         {picture.description ? (
+          {picture.description ? (
             <p className='para'>{picture.description}</p>
           ) : (
             <p className='para invisible-placeholder'>&nbsp;</p>
@@ -24,3 +24,4 @@ function PictureList({ pictures, isLoading }) {
 }
 
 export default PictureList;
+

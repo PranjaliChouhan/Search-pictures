@@ -147,3 +147,16 @@ body{
     background-position: 200% 0;
   }
 }
+
+
+@media screen and (max-width: 768px) {
+  .picture-item img {
+    display: flex;
+    width: 300px;
+    height: 300px;
+  }
+  .search input{
+    width: 200px;
+    padding: 2px;
+  }
+}
