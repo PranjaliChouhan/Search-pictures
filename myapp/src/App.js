@@ -46,7 +46,7 @@ function App() {
   };
 
   const loadMore = () => {
-    setPage(prevPage => prevPage + 1); // Increment the page number to load more results
+    setPage(prevPage => prevPage + 1); 
   };
 
   return (
